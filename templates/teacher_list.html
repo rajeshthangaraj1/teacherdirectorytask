@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Teacher List</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Name</th>
+    </tr>
+    {% for teacher in teachers %}
+        <tr>
+            <td><a href="/teacher/{{ teacher.id }}">{{ teacher }}</a></td>
+        </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
